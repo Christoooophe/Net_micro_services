@@ -4,7 +4,7 @@ using OrderService.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<OrderDatabaseSettings>(
-    builder.Configuration.GetSection("BookStoreDatabase"));
+    builder.Configuration.GetSection("OrderDatabase"));
 
 
 builder.Services.AddScoped<IOrdersService, OrdersService>();
